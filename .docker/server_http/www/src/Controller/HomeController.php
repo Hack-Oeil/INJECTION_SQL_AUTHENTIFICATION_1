@@ -11,11 +11,11 @@ class HomeController extends AbstractController
         $user = $this->getUser();
         if($user) {
             if(
-                ($user->getId()===3 && $user->getEmail()=='maxime@toitoimontoit.fr')
+                ($user->getId()==3 && $user->getEmail()=='maxime@toitoimontoit.fr')
                 ||
-                ($user->getId()===8 && $user->getEmail()=='heloise@toitoimontoit.fr')
+                ($user->getId()==8 && $user->getEmail()=='heloise@toitoimontoit.fr')
                 ||
-                ($user->getId()=== 2 && $user->getEmail()=='michel@toitoimontoit.fr')
+                ($user->getId()==2 && $user->getEmail()=='michel@toitoimontoit.fr')
             ) {
                 $flag = $this->getFlag();
             }
