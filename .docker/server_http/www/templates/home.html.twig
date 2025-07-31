@@ -1,0 +1,207 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+    {% if app.user and app.user.id >= 1 %}
+        {% if flag == null %}
+        <div class="container-fluid custom-container">
+            <div class="alert alert-info">Vous êtes connecté avec un compte n'ayant pas les droits nécessaires pour obtenir le flag.</div>
+        </div>
+        {% else %}
+            <div class="container-fluid custom-container">
+                <div class="alert alert-success">Le flag est : {{ flag }}</div>
+            </div>
+        {% endif %}
+    {% endif %}
+<section class="section-padding blog-section">
+    <div class="container-fluid custom-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-12">
+                    <div class="section-header-left title">
+                        <h3 class="text-light-black header-title">Les biens</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="type-box-2 item-per-row-4">
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 col-md-6">
+                    <article class="prop-item prop-item-box">
+                        <div class="prop-item-img">
+                            <img width="426" height="311" src="/assets/images/property-10.jpg" class="blog-thumbnail wp-post-image" alt="">
+                            <ul class="prop-item-badge">
+                                <li>A louer</li>
+                            </ul>
+                        </div>
+                        <div class="prop-item-content">
+                            <h5 class="prop-item-title">
+                                <a href="#">12 Rue de la Banane Flambée</a>
+                            </h5>
+                            <p>
+                                Maison spacieuse et moderne avec des murs extérieurs en béton gris clair et une toiture plate en béton foncé. 
+                                La maison est située dans un quartier résidentiel elle a de grandes fenêtres en verre qui permettent à la lumière 
+                                naturelle d'entrer dans les pièces. Il y a aussi un grand garage attenant à la maison situé dans un environnement 
+                                paisible pour y vivre....
+                                <br /> 
+                            </p>
+                            <ul class="package-feature">
+                                <li>                                                
+                                    <i class="fas fa-compress-arrows-alt"></i>
+                                    <span>5 Pièces</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-bed"></i>
+                                    <span>3 Chambres</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-bath"></i>
+                                    <span>1 Salle de bain</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-warehouse"></i>
+                                    <span>1 Garage</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-6">
+                    <article class="prop-item prop-item-box">
+                        <div class="prop-item-img">
+                            <img width="426" height="311" src="/assets/images/property-8.jpg" class="blog-thumbnail wp-post-image" alt="">
+                            <ul class="prop-item-badge">
+                                <li>A Vendre</li>
+                            </ul>
+                        </div>
+                        <div class="prop-item-content">
+                            <h5 class="prop-item-title">
+                                <a href="#">364 Rue des Ananas Moisis</a>
+                            </h5>
+                            <p>
+                                Grande propriété de style moderne, avec des fenêtres en verre qui offrent une vue magnifique sur les montagnes 
+                                en arrière-plan. Grande terrasse en bois avec des chaises et une table pour se détendre en plein air. 
+                                Jardin bordée de buissons et de plantes en pots.                                            
+                                La propriété est située dans un endroit entourée de forêts et de montagnes verdoyantes dans une atmosphère calme et relaxante,
+                                idéale pour se ressourcer loin de l'agitation de la ville.
+                            </p>
+                            <ul class="package-feature">
+                                <li>
+                                    <i class="fas fa-compress-arrows-alt"></i>
+                                    <span>4 Pièces</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-bed"></i>
+                                    <span>2 Chambres</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-bath"></i>
+                                    <span>1 Salle de bain</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-warehouse"></i>
+                                    <span>1 Garage</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-6">
+                    <article class="prop-item prop-item-box">
+                        <div class="prop-item-img">
+                            <img width="426" height="311" src="/assets/images/property-9.jpg" class="blog-thumbnail wp-post-image" alt="">
+                            <ul class="prop-item-badge">
+                                <li>A vendre</li>
+                            </ul>
+                        </div>
+                        <div class="prop-item-content">
+                            <h5 class="prop-item-title">
+                                <a href="#">233 Washington Ave Brooklyn</a>
+                            </h5>
+                            <p>
+                                Magnifique maison de style contemporain située dans un quartier paisible et résidentiel. La maison est entourée d'un jardin soigneusement aménagé, 
+                                avec de nombreux arbres, des arbustes et des plantes qui créent une atmosphère relaxante et verdoyante.
+                                La propriété dispose également d'un grand garage pour deux voitures. La maison est construite avec des 
+                                matériaux de haute qualité.
+                            </p>
+                            <ul class="package-feature">
+                                <li>
+                                    <i class="fas fa-compress-arrows-alt"></i>
+                                    <span>3 Pièces</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-bed"></i>
+                                    <span>2 Chambres</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-bath"></i>
+                                    <span>1 Salle de bain</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-warehouse"></i>
+                                    <span>1 Garage</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>                            
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+</section>
+
+<section class="why-us">
+    <div class="container-fluid custom-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-header-left title">
+                    <h3 class="text-light-black header-title">Pourquoi nous choisir</h3>
+                </div>
+            </div>
+        </div>
+        <div class="why-us-box">
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 col-md-6">
+                    <div class="why-us-item text-center">
+                        <div class="why-us-icon">
+                            <i class="flaticon-discount"></i>
+                        </div>
+                        <div class="why-us-content">
+                            <h3><a href="#">La maison idéale</a></h3>
+                            <p class="mar-0">
+                                Parce que nous sommes des experts de la "maison qui n'existe pas" et nous savons exactement où la trouver.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-6">
+                    <div class="why-us-item text-center">
+                        <div class="why-us-icon">
+                            <i class="flaticon-house-key"></i>
+                        </div>
+                        <div class="why-us-content">
+                            <h3><a href="#">Nous avons un sixième sens</a></h3>
+                            <p class="mar-0">
+                                Si vous nous dites que vous cherchez une maison, nous savons que vous cherchez une maison !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-6">
+                    <div class="why-us-item text-center">
+                        <div class="why-us-icon">
+                            <i class="flaticon-worldwide"></i>
+                        </div>
+                        <div class="why-us-content">
+                            <h3><a href="#">Pas le choix ...</a></h3>
+                            <p class="mar-0">
+                                Si vous êtes ici c'est que vous n'avez rien trouvé ailleurs !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+{% endblock %}
